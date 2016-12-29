@@ -19,3 +19,15 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+<<<<<<< HEAD
+=======
+
+=======
+
+# Ignore Spring files.
+/spring/*.pid
+
+# Ignore uploaded test images.
+/public/uploads
+
+>>>>>>> fd489be83cfd2f360c5eb3df30899511759d5cb8
