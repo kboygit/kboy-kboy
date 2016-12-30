@@ -1,6 +1,12 @@
 <!-- <% provide(:title, "Home") %> -->
-<center>
-  <h1>Home</h1>
-  <p>This is the home page for <a href="https://about.me/k-boy">Kirby's</a> brief introduction.</p>
+<div class="center jumbotron">
+  <h1>Welcome Home</h1>
+  <h2>This is the home page for <a href="https://about.me/k-boy">Kirby's</a> brief introduction.</h2>
   <p>page is under construction...</p>
-</center>
+
+  <%= link_to "Sign up", '#', class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("tatami.png", alt: "KBOY"),
+            'http://rapollorap.herokuapp.com/' %>
+<%= link_to image_tag("kitten.png", alt: "KBOY"),
+            'http://rapollorap.herokuapp.com/' %>
