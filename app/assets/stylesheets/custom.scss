@@ -1,8 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* KBOY's Variable , MIXINS , ETC. */
+$gray-medium-light: #eaeaea;
 
-/* UNIVERSAL */
+/* KBOY's UNIVERSAL */
 
 body {
   padding-top: 60px;
@@ -18,13 +20,20 @@ textarea {
 
 .center {
   text-align: center;
+  h1 { //nesting in sass implentation
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
+// .center h1 {
+//   margin-bottom: 10px; // THIS PART IS BEING NESTED ABOVE
+// }
+
+img {
+  display: none; // Hide all images but image source is present
 }
 
-/* TYPOGRAPHY */
+/* KBOY's TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, ,h6 {
   line-height: 1;
@@ -43,10 +52,79 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.67em;
 }
+
+/* KBOY's HEADER */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.8em;
+  color: #ffbf00;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover { // scss/sass implentation using ampersand , and nesting in sass
+    color:#fff ;
+    text-decoration: none;
+  }
+}
+
+// #logo:hover {
+//   color:#fff;
+//   text-decoration: none; // THIS PART IS BEING NESTED ABOVE
+// }
+
+/* KBOY's FOOTER */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: $gray-light;
+  a { //sass implentation
+    color: $gray;
+    &:hover {
+    color: $gray-darker;
+    }
+  }
+  small {
+    float:left;
+  }
+  ul {
+    float:right;
+    list-style: none;
+    li { // sass implementation up to this part
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+//         THIS IS PART IS BEING NESTED ABOVE        //
+// footer a {
+//   color: #555;
+// }
+//
+// footer a:hover {
+//   color: #222;
+// }
+//
+// footer small {
+//   float: left;
+// }
+//
+// footer ul {
+//   float: right;
+//   list-style: none;
+// }
+//
+// footer ul li {
+//   float: left;
+//   margin-left: 10px;
+// }

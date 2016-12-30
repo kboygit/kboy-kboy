@@ -2,18 +2,13 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- HTML5 Shim for IE browsers -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+    <%= render 'layouts/rails_default' %>
+    <%= render 'layouts/shim' %>
+
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <!-- header being render in _header.html.erb -->
+    <!-- <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "KBOY", '#', id: "logo" %>
         <nav>
@@ -24,9 +19,11 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
+    <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
