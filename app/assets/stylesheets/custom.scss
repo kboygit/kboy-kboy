@@ -29,9 +29,9 @@ textarea {
 //   margin-bottom: 10px; // THIS PART IS BEING NESTED ABOVE
 // }
 
-img {
-  display: none; // Hide all images but image source is present
-}
+// img {
+//   display: none; // Hide all images but image source is present
+// }
 
 /* KBOY's TYPOGRAPHY */
 
@@ -72,7 +72,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover { // scss/sass implentation using ampersand , and nesting in sass
-    color:#fff ;
+    color:#000 ;
     text-decoration: none;
   }
 }
