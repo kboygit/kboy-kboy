@@ -47,8 +47,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em;
-  letter-spacing: -1.2px;
+  font-size: 1.2em;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -57,7 +57,7 @@ h2 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.67em;
+  line-height: 1.7em;
 }
 
 /* KBOY's HEADER */
@@ -65,7 +65,7 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: #ffbf00;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -85,6 +85,8 @@ p {
 /* KBOY's FOOTER */
 footer {
   margin-top: 45px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $gray-light;
