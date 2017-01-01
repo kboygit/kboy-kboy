@@ -87,7 +87,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover { // scss/sass implentation using ampersand , and nesting in sass
-    color:#fff ;
+    color:#000 ;
     text-decoration: none;
   }
 }
@@ -190,7 +190,7 @@ aside {
 /* KBOY's FORMS */
 
 input , textarea, select, .uneditable-input {
-  border : 1px solide #bbb;
+  border : 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
@@ -198,4 +198,21 @@ input , textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+
+#error_explanation {
+  color: #ff1a1a;
+  ul {
+    color: #ff1a1a;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    // color: $state-danger-text; // default in rails
+    color: #cc0000;
+  }
 }
