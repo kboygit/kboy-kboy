@@ -1,11 +1,13 @@
 <% if @user.errors.any? %>
-  <div id="error_explanation">
-    <div class="alert alert-danger">
-                          <!-- first error message option -->
-      <!-- Kirby says you have <%= pluralize(@user.errors.count, "error") %>. -->
+<div class="center">
+  <div class="alert alert-danger">
+                        <!-- first error message option -->
+    <!-- Kirby says you have <%= pluralize(@user.errors.count, "error") %>. -->
 
-      Kirby says you need to fill out the following errors.
-    </div>
+    Kirby says you need to fill out the following errors.
+  </div>
+</div>
+  <div id="error_explanation">
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
