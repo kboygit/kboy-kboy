@@ -10,3 +10,8 @@
 
 
 # emptied for now
+
+kirby:
+  name: Kirby James
+  email:  heybisayangdako@gmail.com
+  password_digest:  <%= User.digest('password') %>
