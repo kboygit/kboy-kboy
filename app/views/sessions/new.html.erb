@@ -4,9 +4,14 @@
 <div class="jumbotron">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <!-- <div class="center">
-          <%= flash[:danger] %>
-      </div> -->
+      <!-- <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-info" %>
+      <% end %> -->
+
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+
       <%= form_for(:session, url: login_path) do |f| %>
 
         <%= f.label :email %>
