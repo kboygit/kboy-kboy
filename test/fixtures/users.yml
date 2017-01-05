@@ -15,3 +15,8 @@ kirby:
   name: Kirby James
   email:  heybisayangdako@gmail.com
   password_digest:  <%= User.digest('password') %>
+
+james:
+  name: James Kirby
+  email: james@example.gov
+  password_digest: <%= User.digest('password') %>
