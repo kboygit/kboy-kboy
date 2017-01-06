@@ -1,3 +1,3 @@
-# KBOY's Simple App
+Trial && Error on rails 5.0 +
 
-A simple portfolio of mine :)
+Link : https://kirbyj.herokuapp.com/
