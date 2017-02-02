@@ -1,4 +1,4 @@
-![Kirby](assets/images/kirbylogo.png?raw=true "kirbylogo")
+![Kirby](app/assets/images/kirbylogo.png?raw=true "kirbylogo")
 
 # Trial && Error on rails 5.0 +
 
